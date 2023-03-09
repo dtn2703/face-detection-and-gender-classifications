@@ -136,7 +136,7 @@ def load_facenet_svm_model(recognition_model_path):
     return (embedder, model)
 
 def facenet_svm_predict(image, model):
-    class_name = ['female', 'male']
+    class_name = ['male', 'female']
     model_facenet, model_svm = model
     required_size = (160, 160)
     image = cv2.resize(image, required_size)
@@ -146,8 +146,3 @@ def facenet_svm_predict(image, model):
     gender = model_svm.predict(embedding)
 
     return class_name[int(gender[0])]
-
-
-
-
-
