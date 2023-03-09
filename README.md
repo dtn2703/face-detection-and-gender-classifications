@@ -13,7 +13,7 @@ This application processes real-time face detection and gender recognition tasks
 * Facenet + SVM
 
 **The technology used includes:**
-* Python 
+* Python3.8
 * Ubuntu
 * Streamlit: building web applications for this projects.
 * Thread in Python: a module used for creating and managing threads in a multi-threaded application. It allows the program to perform multiple tasks simultaneously, improving performance and user experience.
@@ -29,7 +29,7 @@ This application processes real-time face detection and gender recognition tasks
 git clone https://github.com/lynguyenminh/face-applicaation.git && cd face-applicaation
 
 # install environment
-pip install -r requirements.txt
+python3.8 -m pip install -r requirements.txt --no-cache-dir
 
 # download weights for models
 sh download_model.sh
